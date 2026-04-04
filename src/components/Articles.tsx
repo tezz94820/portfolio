@@ -3,12 +3,14 @@ import { ExternalLink, BookOpen } from "lucide-react";
 const articles = [
   {
     title: "In-Depth Guide to ETag, If-Match, and If-None-Match Headers in Node.js and React",
+    link:"https://medium.com/@tejasitankar94820/in-depth-guide-to-etag-if-match-and-if-none-match-headers-in-node-js-and-react-69727f478d46?sk=13e70df3241cfc2e0429192c52c313ee",
     description:
       "A comprehensive deep dive into HTTP caching mechanisms, explaining how ETags work with practical Node.js and React implementations.",
     tags: ["Node.js", "React", "HTTP", "Caching"],
   },
   {
     title: "How WhatsApp Makes Links Come to Life: A Developer's Guide to OG Metadata Scraping in NodeJS",
+    link:"https://medium.com/@tejasitankar94820/how-whatsapp-makes-links-come-to-life-a-developers-guide-to-og-metadata-scraping-in-nodejs-140a06ef7cde?sk=8d3bdbaecfcc9ad4a9360f5342d75c1d",
     description:
       "Exploring how link previews work behind the scenes, with a hands-on guide to building an OG metadata scraper in Node.js.",
     tags: ["Node.js", "Web Scraping", "Open Graph"],
@@ -40,7 +42,9 @@ const Articles = () => {
                   <BookOpen size={18} className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading text-base font-semibold text-foreground mb-2 leading-snug">
+                  <h3 className="font-heading text-base font-semibold text-foreground mb-2 leading-snug hover:cursor-pointer hover:text-primary"
+                    onClick={() => window.open(article.link, "_blank")}
+                  >
                     {article.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-3">

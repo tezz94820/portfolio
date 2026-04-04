@@ -129,7 +129,7 @@ const About = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-border">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Tejas Itankar. Built with ❤️
+            © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
       </div>

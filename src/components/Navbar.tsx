@@ -37,7 +37,7 @@ const Navbar = () => {
           onClick={() => handleClick("#home")}
           className="font-heading text-xl font-bold tracking-tight text-foreground"
         >
-          Tejas<span className="text-primary">.</span>
+          Tejas Itankar<span className="text-primary">.</span>
         </button>
 
         {/* Desktop */}
